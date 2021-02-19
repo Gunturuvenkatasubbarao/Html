@@ -1,0 +1,72 @@
+<html>
+    <div style="margin:auto;background-color: rgba(195, 88, 38, 0.863);border: 3px solid;width: 50%;">
+    <head>
+        <center><h1>Match summary</h1></center>
+    </head>
+    <script>
+        function f()
+        {
+        var a= document.getElementById("a1").value;
+        var b=document.getElementById("b1").value;
+        var c= document.getElementById("T1").value;
+        var d=document.getElementById("T2").value;
+        if(a>b){
+            document.getElementById("dem").innerHTML=c;
+    
+        }
+        else{
+            document.getElementById("dem").innerHTML=d;
+    
+        }
+        
+        
+        }
+    </script>
+    <body>
+        
+            <table  style="margin-left: auto; margin-right:auto;">
+                <tr>
+                    <td >Team A<span style="color: red;">*</span> </td>
+                    <td ><input type="text" name="name" id="T1" placeholder="Team A" /></td>
+                </tr>
+                <br>
+                <tr>
+                    <td >Team B<span style="color: red;">*</span> </td>
+                    <td ><input type="text" name="name" id="T2" placeholder="Team B" /></td>
+                </tr>
+                <tr>
+                    <td>Date<span style="color: red;">*</span> </td>
+                    <td><input type="date" name="date" style=" width: 78%;"/></td>
+                </tr>
+                <tr>
+                     <td>Time<span style="color: red;">*</span> </td>
+                    <td><input type="time" name="time" placeholder="HH:MM:SS" /></td>
+                </tr>
+                <tr>
+                    <td >Team A Score<span style="color: red;">*</span> </td>
+                    <td><input type="text" name="score" id="a1" placeholder="Runs/Wkts" /></td>
+                </tr>
+                <tr>
+                    <td >Team B Score<span style="color: red;">*</span> </td>
+                    <td><input type="text" name="score" id="b1" placeholder="Runs/Wkts" /></td>
+                </tr></br>
+                
+        <tr><td><button onclick="f()">save</td></tr>
+        <tr>
+            <td>
+                Winning Team:
+            </td>
+        </tr>
+        <tr>
+            <td><p id="dem"></p></td>
+            </tr>
+            
+        </table>
+        <center><tr><a href="file:///C:/Users/CTEA/Desktop/project/website.html#"><p style="color:rgb(0, 140, 255);">Go Back Home</p></a></tr></center>
+        
+    </body>
+    
+            
+</div>
+
+</html>
